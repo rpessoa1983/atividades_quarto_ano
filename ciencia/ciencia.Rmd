@@ -1,0 +1,57 @@
+---
+title: "Atividade de Ciências"
+output:
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true  
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+library(htmltools)
+```
+
+
+## Tópico 1
+
+### Exercício 
+
+```{r quiz}
+quiz(
+  question("Identifique a alternativa incorreta sobre as reações químicas que acontecem nos seres vivos.",
+    answer("A fotossíntese é um conjunto de reações realizadas pelas plantas e produz nutrientes e gás oxigênio."),
+    answer("A digestão envolve reações químicas e físicas para que seja possível absorver os nutrientes dos alimentos."),
+    answer("Uma das etapas da fotossíntese depende da presença de vento para que as reações possam ocorrer.", correct = TRUE),
+    answer("O gás oxigênio é um dos reagentes das reações que liberam energia no organismo dos seres vivos.")
+  ),
+  question("Identifique entre as transformações descritas a seguir aquela que corresponde a um fenômeno químico.",
+    answer("Uma pequena bola de massa de modelar é transformada em um palito."),
+    answer("Uma maçã cortada ao meio começa a escurecer na região interna.", correct = TRUE),
+    answer("Uma folha de papel quadrada é dobrada no formato de um pássaro."),
+    answer("Um cubo de gelo derrete no interior de um copo de suco de laranja.")
+  )
+)
+```
+
+
+## Tópico 2
+
+### Exercício - Figura
+
+*Assinale a alternativa que apresenta uma evidência de que está ocorrendo uma transformação química na situação mostrada na imagem.*
+
+
+![](https://s1.static.brasilescola.uol.com.br/be/conteudo/images/b23303c04e003f443ad0adfc3a498423.jpg)
+
+
+
+```{r quiz2}
+quiz(question("Assinale a alternativa correta",
+answer("Liberação de gás.",correct = TRUE),
+answer("Mudança de formato."),
+answer("Alteração no tamanho."),
+answer("Formação de chama.")))
+
+```
